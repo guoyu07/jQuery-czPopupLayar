@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Lancer" />
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.czPopupLayar.js"></script>
+    <link rel="stylesheet" href="http://im.crackedzone.com/resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style/style.css"  />
+	<title>czPopupLayar Demo</title>
+	
+</head>
+
+<body>
+<div class="container">
+    <div class="page-header">
+        <h3>Demo 1: Default</h3>
+    </div>
+ 	<button class="btn" type="button" id="show">Click to View</button>
+</div>
+
+<div id="popup" class="hide">
+	<div class="content">
+        <div class="title">
+            <h2>Foxit Office Suite</h2>
+            <h3>Free, Fast, and Effective Office Productivity Suite</h3>
+        </div>
+        <div class="clear"></div>
+        <p>Foxit Office Suite consists of four free and invaluable office productivity applications from 
+    Foxit and Kingsoft.</p>
+        <p class="nowrap"><strong class="foxit">Foxit Reader</strong><br />
+        The Foxit Reader is a small, fast, and feature rich PDF viewer which allows you to open, view, and print any PDF file.</p>
+        <ul class="foxit">
+            <li>Fast<span class="c49"> - read PDF files without waiting.</span></li>
+            <li>Lightweight<span class="c49"> - PDF reader that is easily deployable and doesn't exhaust system resources. </span></li>
+            <li>Secure<span class="c49"> - so you don't get infected with viruses and can keep sensitive information safe within your PDF documents. </span></li>
+        </ul>
+        <p class="nowrap">Unlike other free PDF readers, Foxit Reader also includes:</p>
+        <ul class="foxit">
+            <li><span class="c49">Easy to use collaboration features like the ability to add annotations to PDF</span></li>
+            <li><span class="c49">Form filling</span></li>
+            <li><span class="c49">The ability to share information with social networks</span></li>
+        </ul>
+        
+        <p class="nowrap"><strong class="kingsoft">Kingsoft Writer</strong><br />
+        Writer is a word processor program that is compatible with Microsoft<sup>&reg;</sup> Word<sup>&reg;</sup> and includes a wide range of easy to use features such as:</p>
+        <ul class="kingsoft">
+            <li><span class="c49">A large range of clip arts, charts, shapes and pictures</span></li>
+            <li><span class="c49">Several text effects, such as shadows, 3-D effects, word art, outlines, emboss engrave and more</span></li>
+            <li><span class="c49">Table insertion and management</span></li>
+            <li><span class="c49">Cross-referencing functions</span></li>
+            <li><span class="c49">Mail merging</span></li>
+            <li><span class="c49">Multiple document viewing methods such as map, gridlines, ruler, and markup</span></li>
+            <li><span class="c49">Document management</span></li>
+        </ul>
+        
+        <p class="nowrap"><strong class="kingsoft">Kingsoft Presentation</strong><br />
+        Presentation allows users to quickly and easily create and edit professional and dynamic slideshows and is compatible with Microsoft PowerPoint<sup>&reg;</sup>. Presentation provides:</p>
+        <ul class="kingsoft">
+            <li><span class="c49">Simple navigation, clearly set-out toolbar and user friendly interface</span></li>
+            <li><span class="c49">The ability to view the slides on two separate monitors at the same time via Double Screen Extended Mode</span></li>
+            <li><span class="c49">The ability to convert slides to CD format, which enables the slides to be played on a computer that doesn't have Presentation installed</span></li>
+            <li><span class="c49">A large number of slide effects to help you to create wonderful slides, such as flash, background sound, different animation effects, and more</span></li>
+        </ul>
+        
+        <p class="nowrap"><strong class="kingsoft">Kingsoft Spreadsheets</strong><br />
+        Spreadsheet offers a wide range of easy to use features to create professional looking spreadsheets and analyze data and is compatible with Microsoft Excel<sup>&reg;</sup>. Spreadsheets provide:</p>
+        <ul class="kingsoft">
+            <li><span class="c49">The ability to open and save documents from a wide variety of formats, which saves money on software purchases while maintaining compatibility and high performance</span></li>
+            <li><span class="c49">A large number of mathematical functions</span></li>
+            <li><span class="c49">Encryption to protect your data</span></li>
+            <li><span class="c49">Multiple shortcut functions to quickly handle data</span></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#popup').czPopupLayar({
+        className:'popup', 
+        title:'Foxit Office Suite', 
+        initCallback: function(){this.$element.removeClass('hide')}
+    });
+
+    $('#show').bind('click', function () {
+        $('#popup').czPopupLayar('instance').show();
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{font-family:Arial;}
+p, h1, h2, h3, h4 ,ul, li {margin:0; padding:0; font-weight: 400;}
+.popup {width:700px;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=120,strength=4);/*ie*/
+    -moz-box-shadow: 4px 4px 10px #000;/*firefox*/
+    -webkit-box-shadow: 4px 4px 10px #000;/*safari或chrome*/
+    box-shadow:4px 4px 10px #000;/*opera或ie9*/}
+.popup .popup_title,
+.popup .close { background-image:url("bg.png"); _background-image:url("bg.gif")}
+.popup .popup_title {height:30px; font-size:18px; font-weight:bold; color:white; line-height:30px; padding-left:20px; background-position:0 -50px; }
+.popup .close { display:block; float:right;height:30px; width:30px; cursor:pointer}
+.popup .popup_content { border:2px solid #222222; background-color:#FFF; padding-bottom:20px; }
+
+#popup.hide { position:absolute; left:-9999px;}
+#popup .title {float:left;height:80px;}
+#popup .content {overflow:auto;height:420px; padding:10px 20px; margin-bottom:20px;}
+#popup h2 {font-size:24px;color:#494949; margin:0; padding:0; line-height:1.2;}
+#popup h3 {font-size:18px;color:#494949; font-weight:bold;}
+#popup p{color:#494949; line-height:18px; padding-bottom:20px; font-size: 14px;}
+#popup p.nowrap { padding-bottom:0;}
+#popup ul {padding-bottom:20px}
+#popup li {margin-left:20px; line-height:18px;}
+#popup .foxit {color:#f47a20;}
+#popup .kingsoft {color:#0244bb;}
+#popup li .c49 {color:#494949;}
+.clear {clear:both;}
